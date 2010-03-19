@@ -3,7 +3,7 @@
 cd src
 ~/Apps/flex_sdk_3.4/bin/mxmlc compareSum.mxml -include-libraries "sfapi.swc"
 
-"sfapi.swc" is the Selenium-Flex-API project ( http://code.google.com/p/sfapi/ ) 
+"sfapi.swc" is from the Selenium-Flex-API project ( http://code.google.com/p/sfapi/ ) 
 
 # 2) Launch a simple webserver 
 python -m SimpleHTTPServer
