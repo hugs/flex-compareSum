@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!-- usingas/SourceInclude.mxml -->
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" creationComplete="init();">
+	<mx:Script>
+ 	<![CDATA[ 
+		private function computeSum(a:Number, b:Number):Number {
+			return a + b;
+		}
+	]]>
+	</mx:Script>
+
+    <mx:TextInput id="arg1" text="3" width="40" x="170" y="24" textAlign="right"/>
+    <mx:TextInput id="arg2" text="3" width="40" x="170" y="52" textAlign="right"/>
+
+    <mx:TextArea id="result" height="25" width="78" x="132" y="82" textAlign="right"/>
+
+    <mx:Button id="submit" label="Compute Sum" 
+        click="result.text=String(computeSum(Number(arg1.text), Number(arg2.text)));" 
+        x="105" 
+        y="115"
+    />
+
+    <mx:Label x="148" y="52" text="+" fontWeight="bold" fontSize="17" width="23"/>
+</mx:Application>
